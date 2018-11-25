@@ -1,0 +1,66 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+\documentclass[a4paper,12pt]{article} % Page size
+\usepackage{proform}
+\renewcommand{\LayoutChoiceField}[2]{%
+\makebox[2.5em][l]{#2}\parbox[t]{\linewidth}{#1}%
+}
+\def\DefaultHeightofChoiceMenu{0.7\baselineskip} 
+\title{Professional membership declaration and claim form}
+\date{}
+\begin{document}
+
+\begin{center}
+	\scriptsize
+	Shell India Markets Pvt Ltd \hfill Personnel Policy \& Practice Manual \\
+	\vspace{18mm}
+	\normalsize
+	\Large\textsc{professional membership declaration and claim form}
+\end{center}
+
+  \vspace{12mm}
+
+  \begin{Form}
+    \q{Membership for}
+    \q{Amount claimed (Rs.)}
+
+  \vspace{3mm}
+
+\noindent\begin{Form}
+	\ChoiceMenu[radio,name=mopt,checkboxsymbol=\ding{52}]{I have one professional membership as per Company policy}{=yes} \\
+	\ChoiceMenu[radio,name=mopt,checkboxsymbol=\ding{52}]{I do not have a professional membership as per Company policy}{=no} \\
+\end{Form}
+
+%  \begin{description}
+%    \item[{[ \ \ ]}] I do not have a professional membership as per Company policy
+%    \item[{[ \ \ ]}] I have one professional membership as per Company policy 
+%  \end{description}
+
+  \end{Form}
+
+\subsubsection*{Self declaration} % (fold)
+\label{ssub:self_declaration}
+
+  I confirm that the above details are true and take full responsibility if any further investigation or details may be requested.
+
+  \vspace{3mm}
+
+  \begin{Form}
+   \q{Employee Name}
+   \q{Employee \textnumero}
+   \q{Employee Signature}
+   \q{Date}
+   \q{Line Manager's Name}
+   \q{Line Manager's Signature}
+  \end{Form}
+
+% subsubsection self_declaration (end)
+
+  \vfill
+
+  \begin{center}
+  \scriptsize
+    Private \emph{\&} Confidential
+  \end{center}
+
+\end{document}

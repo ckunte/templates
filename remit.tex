@@ -1,0 +1,60 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+\documentclass[a4paper,10pt]{article} % Page size
+\usepackage{remit}
+\title{\textsc{details of remittance}}
+\date{}
+\begin{document}
+
+\maketitle
+
+  \begin{Form}
+    \q{Amount to remit (in foreign currency)}
+  \end{Form}
+
+\subsubsection*{Beneficiary's details} % (fold)
+\label{ssub:beneficiary_s_details}
+
+  \begin{Form}
+    \q{Beneficiary's Account \textnumero}
+    \q{Beneficiary's Name}
+    \q{Beneficiary's Address}
+    \q{Beneficiary's Address (line 2)}
+    \q{Beneficiary's Bank SWIFT code / BIC}
+    \q{Beneficiary's Bank IBAN \textnumero}
+    \q{Beneficiary's Bank Name}
+    \q{Beneficiary's Bank Address}
+    \q{Beneficiary's Bank Address (line 2)}
+  \end{Form}
+
+% subsubsection beneficiary_s_details (end)
+
+\vspace{3mm}
+
+\noindent\hrulefill
+
+\subsubsection*{Remitter's details} % (fold)
+\label{ssub:remitter_s_details}
+
+  \begin{Form}
+    \q{Remitter's Account \textnumero}
+    \q{Remitter's Name}
+    \q{Remitter's Address}
+    \q{Remitter's Address (line 2)}
+    \q{Remitter's Mobile Phone \textnumero}
+    \q{Sender to Receiver Information}
+  \end{Form}
+
+% subsubsection remitter_s_details (end)
+
+\vspace{18mm}
+
+\noindent Place: \dotfill
+
+\vspace{3mm}
+
+\noindent Date: \dotfill \hfill (Signature of remitter)
+
+% section remitter (end)
+
+\end{document}

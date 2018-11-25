@@ -1,0 +1,63 @@
+%!TEX ts-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[12pt,a4paper]{article}
+\usepackage{ckunte} % custom style
+\title{Document title} % title
+\author{Author 1 \and Author 2} % authors
+% Document
+\begin{document}
+	\maketitle
+
+	\phantomsection\addcontentsline{toc}{section}{Summary}
+	\section*{Summary} % (fold)
+	\label{sec:summary}
+		
+	Blah.
+		
+	% section summary (end)
+
+	\pagebreak
+
+	\tableofcontents
+
+	\listoftables
+
+	\listoffigures
+
+	\section*{Abbreviations} % (fold)
+	\label{sec:abbr}
+	\begin{tabular}{r l}
+	     \textsc{rov} & Remotely operated vehicle \\
+	                t & Metric ton \\
+	\end{tabular}
+	% section abbr (end)
+
+	\section{Background} % (fold)
+	\label{sec:bg}
+	
+	Blah.
+
+	% section bg (end)
+
+	\phantomsection\addcontentsline{toc}{section}{References}
+
+	\begin{thebibliography}{9}
+	    \bibitem{u1}
+	        Kunte, C., wan Alwi, Y.,
+	        \emph{Barge motion responses in the South China Sea}, 
+	        March 2015.
+
+	\end{thebibliography}
+
+	\appendix
+	\phantomsection\addcontentsline{toc}{section}{Appendices}
+	\section*{Appendices}
+
+	\section{Appendix 1} % (fold)
+	\label{sec:app1}
+
+	Blah.
+	
+	% section app1 (end)
+
+\end{document}

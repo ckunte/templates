@@ -1,0 +1,17 @@
+\usepackage{geometry}\geometry{margin=1.0in}
+\usepackage[bookmarks,colorlinks,pdfusetitle]{hyperref} % Document properties, etc.
+\usepackage{xcolor,fontspec}
+\hypersetup{linkcolor=blue,citecolor=magenta,filecolor=black,urlcolor=blue}
+\setmainfont{XCharter}
+%
+% \usepackage{sectsty} % Section styling
+% \sectionfont{\rmfamily\mdseries\normalsize\Large\scshape\MakeLowercase}
+% \subsectionfont{\rmfamily\mdseries\normalsize}
+% \subsubsectionfont{\rmfamily\mdseries\itshape\normalsize}
+% \setlength\parskip{3pt} % Paragraph spacing
+%
+\newdimen\longline
+\longline=\textwidth\advance\longline-6.3cm
+\def\LayoutTextField#1#2{#2} % override default in hyperref
+\def\lbl#1{\hbox to 6.3cm{#1\dotfill\strut}}%
+\def\labelline#1#2{\lbl{#1}\vbox{\hbox{\TextField[name=#1,width=#2,bordercolor=white]{\null}}\kern2pt\hrule}}\def\q#1{\hbox to \hsize{\labelline{#1}{\longline}}\vskip1.4ex}
