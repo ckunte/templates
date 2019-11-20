@@ -1,11 +1,10 @@
-% ckunte.sty -- Custom style, 2018 ckunte
-\usepackage{geometry}\geometry{margin=1.0in} % Margins setup
-\usepackage{ebgaramond} % Using EB Garamond font
-\usepackage[cmintegrals,cmbraces]{newtxmath} % EB Garamond math
-\usepackage{ebgaramond-maths} % EB Garamond math
-\usepackage{sectsty} % Section styling
+% ckunte.sty -- Custom style, 2019 ckunte
+\usepackage{geometry}\geometry{margin=1.25in} % Margins setup \geometry{margin=1.25in}
+\usepackage{fourier} % Utopia fourier fonts with math support
 \usepackage{longtable} % Table that can extend over pagebreaks
-\usepackage{pdflscape} % For certain landscape pages
+\usepackage{pgfplots} % For plots
+\pgfplotsset{compat=1.16}
+% \usepackage{pdflscape} % For certain landscape pages
 \usepackage{array,float} % Required for tables and figures
 \usepackage{pdfpages} % For including pdf pages
 \usepackage{titling} % To enable using elements like title and author in other parts of document
@@ -13,14 +12,23 @@
 %\usepackage{booktabs} % Publication quality tables
 %\usepackage[ddmmyyyy]{datetime}\renewcommand{\dateseparator}{.} % Custom date
 \usepackage[font=it]{caption} % Italicising captions
-% Styling section titles
-\sectionfont{\rmfamily\mdseries\normalsize\Large\scshape\MakeLowercase}
-\subsectionfont{\rmfamily\mdseries\normalsize}
-\subsubsectionfont{\rmfamily\mdseries\itshape\normalsize}
+% Styling section titles ----------------------------------------------
+% \usepackage{sectsty} % Section styling
+% \sectionfont{\rmfamily\mdseries\normalsize\Large\scshape\MakeLowercase}
+% \subsectionfont{\rmfamily\mdseries\normalsize}
+% \subsubsectionfont{\rmfamily\mdseries\itshape\normalsize}
+% ---------------------------------------------------------------------
 \setlength\parskip{3pt} % Paragraph spacing
 \setlength{\extrarowheight}{3pt} % Setting default row height
+\def\sectionautorefname{\S}
+\def\subsectionautorefname{\S}
+\def\subsubsectionautorefname{\S}
 \def\deg{\ifmmode^\circ\else$^\circ$\fi} % Degree symbol
+% \let\sc\textsc
+% \renewcommand{\textsc}[1]{\sc{#1}}
 \usepackage{enumitem} % For modifying description list
+% \definecolor{blue}{rgb}{0,0,0.60}
+% \definecolor{red}{rgb}{0.60,0,0}
 \usepackage[xetex,bookmarks,colorlinks,pdfusetitle]{hyperref} % Document properties, etc.
 \hypersetup{linkcolor=blue,citecolor=magenta,filecolor=black,urlcolor=blue} % hyperlink setup
 % Styling header rows in tables
