@@ -10,7 +10,7 @@ This repository contains the following templates.
 1. `proform.tex` for professional membership (fillable) claim form &mdash; requires `proform.sty`.
 2. `remit.tex` for remittance &mdash; requires `remit.sty`
 
-Style files can either be co-located with `.tex` files, or installed system-wide. For system-wide installation please see [installing custom style][i].
+Style (`.sty`) files can either be co-located with `.tex` files, or installed system-wide. For system-wide installation please see [installing custom style][i].
 
 See also [snippets for reference][w].
 
@@ -19,7 +19,7 @@ See also [snippets for reference][w].
 [Using TeX Live Utility][tlu], install the following packages:
 
 1. `datetime` for date and time options
-2. `ebgaramond` and _ebgaramond-maths_ &mdash; [custom fonts][ebg]
+2. `fourier` for Adobe Utopia font with math support
 3. `enumitem` for formatting enumitems
 4. `pdfpages` for embedding pdf pages/documents
 5. `pgfplots` for PGF plots
@@ -31,7 +31,7 @@ See also [snippets for reference][w].
 To install them all in on go, run the following command in terminal:
 
 ```bash
-sudo tlmgr install datetime ebgaramond ebgaramond-maths enumitem pdfpages pgfplots placeins pythonhighlight sectsty titling
+sudo tlmgr install datetime fourier enumitem pdfpages pgfplots placeins pythonhighlight sectsty titling
 ```
 
 # Installing custom style
@@ -53,10 +53,8 @@ sudo tlmgr install datetime ebgaramond ebgaramond-maths enumitem pdfpages pgfplo
     fi
     ```
 
-3. Test to check if `texmf` folder is mapped correctly to `TEXMFHOME` by running `kpsewhich -var-value TEXMFHOME`. This would be `/Users/<username>/texmf` in macOS; `/home/<username>/texmf` in Linux, Cygwin, etc.
+3. Test to check if `texmf` folder is mapped correctly to `TEXMFHOME` by running `kpsewhich -var-value TEXMFHOME`. This would be `$HOME/texmf` in macOS, Linux, Cygwin (on Windows), etc.
 
 [tlu]: http://amaxwell.github.io/tlutility/ "TeX Live Utility"
-[ebg]: http://www.georgduffner.at/ebgaramond/ "EB Garamond"
 [w]: https://github.com/ckunte/templates/wiki "Home - ckunte/templates Wiki"
-[l]: https://ckunte.net/2011/latex "ckunte.net: LaTeX"
 [i]: https://github.com/ckunte/templates#installing-custom-style "Installing custom style system-wide"
