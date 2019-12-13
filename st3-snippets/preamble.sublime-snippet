@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{article}
+\usepackage{ckunte}
+\title{${1:Title}}
+\author{C Kunte}
+
+\begin{document}
+
+  \maketitle
+
+\end{document}
+]]></content>
+	<tabTrigger>preamble</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>
