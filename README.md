@@ -55,6 +55,11 @@ sudo tlmgr install datetime fourier enumitem pdfpages pgfplots placeins pythonhi
 
 3. Test to check if `texmf` folder is mapped correctly to `TEXMFHOME` by running `kpsewhich -var-value TEXMFHOME`. This would be `$HOME/texmf` in macOS, Linux, Cygwin (on Windows), etc.
 
+# Editing aids
+
+User defined [Sublime Text 3 snippets][sn] are available for use.
+
 [tlu]: http://amaxwell.github.io/tlutility/ "TeX Live Utility"
 [w]: https://github.com/ckunte/templates/wiki "Home - ckunte/templates Wiki"
 [i]: https://github.com/ckunte/templates#installing-custom-style "Installing custom style system-wide"
+[sn]: https://github.com/ckunte/templates/tree/master/st3-snippets "templates/st3-snippets at ckunte/templates"
