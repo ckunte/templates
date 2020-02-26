@@ -19,7 +19,7 @@ See also [snippets for reference][w].
 [Using TeX Live Utility][tlu], install the following packages:
 
 1. `datetime` for date and time options
-2. `fourier` for Adobe Utopia font with math support
+2. `erewhon` font with `newtx` for math support
 3. `enumitem` for formatting enumitems
 4. `pdfpages` for embedding pdf pages/documents
 5. `pgfplots` for PGF plots
@@ -31,7 +31,7 @@ See also [snippets for reference][w].
 To install them all in on go, run the following command in terminal:
 
 ```bash
-sudo tlmgr install datetime fourier enumitem pdfpages pgfplots placeins pythonhighlight sectsty titling
+sudo tlmgr install datetime erewhon newtx enumitem pdfpages pgfplots placeins pythonhighlight sectsty titling
 ```
 
 # Installing custom style
