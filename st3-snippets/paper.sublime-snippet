@@ -3,7 +3,7 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 \documentclass[11pt,a4paper]{article}
-\usepackage{ckunte}
+\usepackage{paper}
 \title{${1:Title}}
 \author{C Kunte}
 
@@ -13,6 +13,6 @@
 
 \end{document}
 ]]></content>
-	<tabTrigger>preamble</tabTrigger>
+	<tabTrigger>paper</tabTrigger>
 	<scope>text.tex.latex</scope>
 </snippet>
