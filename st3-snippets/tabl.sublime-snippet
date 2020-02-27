@@ -5,10 +5,10 @@
 \label{tab:${2:tname}}
 \centering
   \begin{tabular}{+l^c}
-         Label1 & Label2 \\
+         Label1 & Label2 \\\\
   \rowstyle{\itshape}
-  Full spectrum & 0.358 \\
-    Narrow band & 0.343 \\
+  Full spectrum & 0.358 \\\\
+    Narrow band & 0.343 \\\\
   \end{tabular}
 \end{table}
 ]]></content>
