@@ -5,8 +5,8 @@
 \label{tab:${2:tname}}
 \centering
   \begin{tabular}{+l^c}
-         Label1 & Label2 \\\\
   \rowstyle{\itshape}
+         Label1 & Label2 \\\\
   Full spectrum & 0.358 \\\\
     Narrow band & 0.343 \\\\
   \end{tabular}
