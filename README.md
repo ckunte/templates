@@ -59,7 +59,20 @@ sudo tlmgr install datetime erewhon newtx enumitem pdfpages pgfplots placeins py
 
 User defined [Sublime Text 3 snippets][sn] are available for use.
 
+To download to, say, `~/Projects` folder:
+
+```bash
+git clone https://github.com/ckunte/templates.git
+```
+
+Create a link to `templates/st3-snippets` folder for [Sublime Text] to access them:
+
+```bash
+ln -s ~/Projects/templates/st3-snippets "$HOME/Library/Application Support/Sublime Text 3/Packages/User/st3-snippets"
+```
+
 [tlu]: http://amaxwell.github.io/tlutility/ "TeX Live Utility"
 [w]: https://github.com/ckunte/templates/wiki "Home - ckunte/templates Wiki"
 [i]: https://github.com/ckunte/templates#installing-custom-style "Installing custom style system-wide"
 [sn]: https://github.com/ckunte/templates/tree/master/st3-snippets "templates/st3-snippets at ckunte/templates"
+[Sublime Text]: https://www.sublimetext.com/ "Sublime Text - A sophisticated text editor for code, markup and prose"
