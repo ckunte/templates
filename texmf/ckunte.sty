@@ -24,9 +24,6 @@
 % ---------------------------------------------------------------------
 \setlength\parskip{3pt} % Paragraph spacing
 \setlength{\extrarowheight}{3pt} % Setting default row height
-\def\sectionautorefname{\S}
-\def\subsectionautorefname{\S}
-\def\subsubsectionautorefname{\S}
 \def\deg{\ifmmode^\circ\else$^\circ$\fi} % Degree symbol
 % \let\sc\textsc
 % \renewcommand{\textsc}[1]{\sc{#1}}
@@ -36,6 +33,9 @@
 %\definecolor{royalblue(traditional)}{rgb}{0.0, 0.14, 0.4}
 \usepackage[xetex,bookmarks,colorlinks,pdfusetitle]{hyperref} % Document properties, etc.
 \hypersetup{linkcolor=blue,citecolor=magenta,filecolor=black,urlcolor=blue} % hyperlink setup
+\def\sectionautorefname{\S}
+\def\subsectionautorefname{\S}
+\def\subsubsectionautorefname{\S}
 % Styling header rows in tables
 \newcolumntype{+}{>{\global\let\currentrowstyle\relax}}
 \newcolumntype{^}{>{\currentrowstyle}}
