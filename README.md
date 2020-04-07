@@ -19,19 +19,22 @@ See also [snippets for reference][w].
 [Using TeX Live Utility][tlu], install the following packages:
 
 1. `datetime` for date and time options
-2. `erewhon` font with `newtx` for math support
-3. `enumitem` for formatting enumitems
-4. `pdfpages` for embedding pdf pages/documents
-5. `pgfplots` for PGF plots
-6. `placeins` for section positioning
-7. `pythonhighlight` for embedding python code
-8. `sectsty` for styling sections
-9. `titling` for titling options
+1. `enumitem` for formatting enumitems
+1. `erewhon` font with `newtx` for math support
+1. `fmtcount` for display value of LaTex counter
+1. `ly1` for postscript font encoding
+1. `newtx` for alternative uses of the TX fonts
+1. `pdfpages` for embedding pdf pages/documents
+1. `pgfplots` for PGF plots
+1. `placeins` for section positioning
+1. `pythonhighlight` for embedding python code
+1. `sectsty` for styling sections
+1. `titling` for titling options
 
 To install them all in on go, run the following command in terminal:
 
 ```bash
-sudo tlmgr install datetime erewhon newtx enumitem pdfpages pgfplots placeins pythonhighlight sectsty titling
+sudo tlmgr install datetime enumitem erewhon fmtcount ly1 newtx pdfpages pgfplots placeins pythonhighlight sectsty titling
 ```
 
 # Installing custom style
