@@ -23,7 +23,6 @@ See also [snippets for reference][w].
 1. `erewhon` font with `newtx` for math support
 1. `fmtcount` for display value of LaTex counter
 1. `ly1` for postscript font encoding
-1. `newtx` for alternative uses of the TX fonts
 1. `pdfpages` for embedding pdf pages/documents
 1. `pgfplots` for PGF plots
 1. `placeins` for section positioning
