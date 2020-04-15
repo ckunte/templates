@@ -73,6 +73,12 @@ Create a link to `templates/st3-snippets` folder for [Sublime Text] to access th
 ln -s ~/Projects/templates/st3-snippets "$HOME/Library/Application Support/Sublime Text 3/Packages/User/st3-snippets"
 ```
 
+## How snippets work
+
+Type a pre-defined keyword, say, `fig` and press <kbd>tab</kbd>, and it produces a full block of figure LaTeX code. See a demonstration below.
+
+![Snippets demo in Sublime Text](./st3-snippets.gif)
+
 [tlu]: http://amaxwell.github.io/tlutility/ "TeX Live Utility"
 [w]: https://github.com/ckunte/templates/wiki "Home - ckunte/templates Wiki"
 [i]: https://github.com/ckunte/templates#installing-custom-style "Installing custom style system-wide"
