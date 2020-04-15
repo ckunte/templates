@@ -14,5 +14,6 @@
 \end{document}
 ]]></content>
 	<tabTrigger>note</tabTrigger>
+	<description>Insert preamble for a note</description>
 	<scope>text.tex.latex</scope>
 </snippet>

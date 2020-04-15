@@ -14,5 +14,6 @@
 \end{document}
 ]]></content>
 	<tabTrigger>paper</tabTrigger>
+	<description>Insert preamble for a paper</description>
 	<scope>text.tex.latex</scope>
 </snippet>

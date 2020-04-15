@@ -13,5 +13,6 @@
 \end{table}
 ]]></content>
     <tabTrigger>tabl</tabTrigger>
+    <description>Insert a table block</description>
     <scope>text.tex.latex</scope>
 </snippet>

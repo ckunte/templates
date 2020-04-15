@@ -8,5 +8,6 @@
 \end{figure}
 ]]></content>
     <tabTrigger>fig</tabTrigger>
+    <description>Insert a figure block</description>
     <scope>text.tex.latex</scope>
 </snippet>
