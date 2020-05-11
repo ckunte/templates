@@ -8,7 +8,7 @@ This repository contains the following reference templates under `templ` folder.
 To insert a template in Sublime Text on-the-fly:
 
 1. Set file-type to LaTeX, and then
-2. Type a tab trigger (`note` or `latter`) and press <kbd>tab</kbd>
+2. Type a tab trigger (`note` or `letter`) and press <kbd>tab</kbd>
 
 # Fillable forms
 
