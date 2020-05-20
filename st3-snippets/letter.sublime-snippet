@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+%!TeX te-program = xelatex
+%!TeX encoding = utf-8 Unicode
 \documentclass[a4paper,12pt]{letter}
 \usepackage[margin=1.25in]{geometry}
 \usepackage[proportional,osf,scaled=1.064]{erewhon}
