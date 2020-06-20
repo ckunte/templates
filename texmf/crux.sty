@@ -1,0 +1,40 @@
+% ckunte.sty -- Custom style, 2018 ckunte
+\usepackage{geometry}\geometry{margin=1.0in} % Margins setup \geometry{margin=1.25in}
+% -- fonts --
+\usepackage[cmintegrals,cmbraces]{newtxmath}
+\usepackage{ebgaramond-maths}
+\usepackage{longtable} % Table that can extend over pagebreaks
+\usepackage{pgfplots} % For plots
+\pgfplotsset{compat=1.16}
+%\usepackage{pdflscape} % For certain landscape pages
+\usepackage{array,float} % Required for tables and figures
+\usepackage{pdfpages} % For including pdf pages
+\usepackage{titling} % To enable using elements like title and author in other parts of document
+\usepackage{pythonhighlight}
+%\usepackage{booktabs} % Publication quality tables
+%\usepackage[ddmmyyyy]{datetime}\renewcommand{\dateseparator}{.} % Custom date
+\usepackage[font=it]{caption} % Italicising captions
+% Styling section titles ----------------------------------------------
+\usepackage{sectsty} % Section styling
+\sectionfont{\rmfamily\mdseries\normalsize\Large\scshape\MakeLowercase}
+\subsectionfont{\rmfamily\mdseries\normalsize}
+\subsubsectionfont{\rmfamily\mdseries\itshape\normalsize}
+% ---------------------------------------------------------------------
+\setlength\parskip{3pt} % Paragraph spacing
+\setlength{\extrarowheight}{3pt} % Setting default row height
+\def\deg{\ifmmode^\circ\else$^\circ$\fi} % Degree symbol
+% \let\sc\textsc
+% \renewcommand{\textsc}[1]{\sc{#1}}
+\usepackage{enumitem} % For modifying description list
+\setlist[description]{style=multiline,font=\normalfont}
+\usepackage[xetex,bookmarks,colorlinks,pdfusetitle]{hyperref} % Document properties, etc.
+\hypersetup{linkcolor=blue,citecolor=magenta,filecolor=black,urlcolor=blue} % hyperlink setup
+\def\sectionautorefname{\S}
+\def\subsectionautorefname{\S}
+\def\subsubsectionautorefname{\S}
+% Styling header rows in tables
+\newcolumntype{+}{>{\global\let\currentrowstyle\relax}}
+\newcolumntype{^}{>{\currentrowstyle}}
+\newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1}%
+  #1\ignorespaces
+}
