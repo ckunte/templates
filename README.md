@@ -1,11 +1,11 @@
 # Templates
 
-This repository contains the following reference templates under `templ` folder. 
+This repository contains the following reference templates. 
 
 1. `note.tex` for writing articles, notes, and papers &mdash; requires `ckunte.sty`.
 2. `letter.tex` for writing old-fashioned letters, cover pages, etc.
 
-To insert a template in Sublime Text on-the-fly:
+To insert a template in Sublime Text on the fly:
 
 1. Set file-type to LaTeX, and then
 2. Type a tab trigger (`note` or `letter`) and press <kbd>tab</kbd>
@@ -24,6 +24,8 @@ See also [snippets for reference][w].
 [Using TeX Live Utility][tlu], install the following packages:
 
 1. `datetime` for date and time options
+1. `ebgaramond-maths` font for math support
+1. `ebgaramond` font
 1. `enumitem` for formatting enumitems
 1. `erewhon` font with `newtx` for math support
 1. `fmtcount` for display value of LaTex counter
@@ -38,10 +40,10 @@ See also [snippets for reference][w].
 To install them all in on go, run the following command in terminal:
 
 ```bash
-$ sudo tlmgr install datetime enumitem erewhon fmtcount ly1 newtx pdfpages pgfplots placeins pythonhighlight sectsty titling
+$ sudo tlmgr install datetime ebgaramond ebgaramond-maths enumitem erewhon fmtcount ly1 newtx pdfpages pgfplots placeins sectsty titling
 ```
 
-# Installing custom style
+# Installing custom style(s)
 
 1. Run these following in terminal:
 
@@ -66,7 +68,7 @@ $ sudo tlmgr install datetime enumitem erewhon fmtcount ly1 newtx pdfpages pgfpl
 
 User defined [Sublime Text 3 snippets][sn] are available for use.
 
-To download to, say, `~/Projects` folder:
+To download to, say, `~/` folder:
 
 ```bash
 $ git clone https://github.com/ckunte/templates.git
@@ -75,7 +77,7 @@ $ git clone https://github.com/ckunte/templates.git
 Create a link to `templates/st3-snippets` folder for [Sublime Text] to access them:
 
 ```bash
-$ ln -s ~/Projects/templates/st3-snippets "$HOME/Library/Application Support/Sublime Text 3/Packages/User/st3-snippets"
+$ ln -s $HOME/templates/st3-snippets "$HOME/Library/Application Support/Sublime Text 3/Packages/User/st3-snippets"
 ```
 
 ## How snippets work
