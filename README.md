@@ -12,7 +12,7 @@ To insert a template in Sublime Text on the fly:
 
 # Fillable forms
 
-1. `proform.tex` for professional membership (fillable) claim form &mdash; requires `proform.sty`.
+1. `pform.tex` for professional membership (fillable) claim form &mdash; requires `pform.sty`.
 2. `remit.tex` for remittance &mdash; requires `remit.sty`
 
 Style (`.sty`) files can either be co-located with `.tex` files, or installed system-wide. For system-wide installation please see [installing custom style][i].
