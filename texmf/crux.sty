@@ -23,8 +23,7 @@
 \setlength\parskip{3pt} % Paragraph spacing
 \setlength{\extrarowheight}{3pt} % Setting default row height
 \def\deg{\ifmmode^\circ\else$^\circ$\fi} % Degree symbol
-% \let\sc\textsc
-% \renewcommand{\textsc}[1]{\sc{#1}}
+\newcommand{\hl}[1]{\textcolor{red}{#1}} % Highlight in red
 \usepackage{enumitem} % For modifying description list
 \setlist[description]{style=multiline,font=\normalfont}
 \usepackage[xetex,bookmarks,colorlinks,pdfusetitle]{hyperref} % Document properties, etc.
