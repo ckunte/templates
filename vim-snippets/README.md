@@ -2,13 +2,22 @@
 
 This repository contains the following custom snippets:
 
-| Snippet                   | Description                  |
-| ------------------------- | ---------------------------- |
-| `fig` + <kbd>tab</kbd>    | Inserts a figure block       |
-| `note` + <kbd>tab</kbd>   | Inserts a note template      |
-| `pdf` + <kbd>tab</kbd>    | Inserts an `includepdf` line |
-| `ref` + <kbd>tab</kbd>    | Inserts a reference block    |
-| `tabl` + <kbd>tab</kbd>   | Inserts a table block        |
+| Snippet                   | Description                     |
+| ------------------------- | -----------------------------   |
+| `beg` + <kbd>tab</kbd>    | Inserts a begin/end block       |
+| `sec` + <kbd>tab</kbd>    | Inserts a section block         |
+| `sub` + <kbd>tab</kbd>    | Inserts a subsection block      |
+| `fig` + <kbd>tab</kbd>    | Inserts a figure/label block    |
+| `note` + <kbd>tab</kbd>   | Inserts a note template         |
+| `pdf` + <kbd>tab</kbd>    | Inserts an `includepdf` line    |
+| `ref` + <kbd>tab</kbd>    | Inserts a reference block       |
+| `tabl` + <kbd>tab</kbd>   | Inserts a table block           |
+| `_` + <kbd>tab</kbd>      | Formats and inserts a subscript |
+| `sr` + <kbd>tab</kbd>     | Inserts a formatted square      |
+| `cb` + <kbd>tab</kbd>     | Inserts a formatted cube        |
+| `//` + <kbd>tab</kbd>     | Inserts a formatted fraction    |
+
+
 
 ## How snippets work
 
