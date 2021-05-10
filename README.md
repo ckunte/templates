@@ -65,7 +65,7 @@ $ sudo tlmgr install datetime ebgaramond ebgaramond-maths enumitem erewhon fmtco
 
 # Editing aids
 
-User defined [Sublime Text 3 snippets][sn] are available for use.
+User defined [Sublime Text 3 LaTeX snippets][sn] and [Vim LaTeX snippets][vs] are available for use.
 
 To download to, say, `~/` folder:
 
@@ -73,11 +73,17 @@ To download to, say, `~/` folder:
 $ git clone https://github.com/ckunte/templates.git
 ```
 
+## Sublime Text 3 LaTeX snippets
+
 Create a link to `templates/st3-snippets` folder for [Sublime Text] to access them:
 
 ```bash
 $ ln -s $HOME/templates/st3-snippets "$HOME/Library/Application Support/Sublime Text 3/Packages/User/st3-snippets"
 ```
+
+## Vim LaTeX snippets
+
+Park `*.snippets` files under `$HOME/.vim/UltiSnips/`.
 
 ## How snippets work
 
@@ -89,4 +95,5 @@ Type a pre-defined keyword, say, `fig` and press <kbd>tab</kbd>, and it produces
 [w]: https://github.com/ckunte/templates/wiki "Home - ckunte/templates Wiki"
 [i]: https://github.com/ckunte/templates#installing-custom-style "Installing custom style system-wide"
 [sn]: https://github.com/ckunte/templates/tree/master/st3-snippets "templates/st3-snippets at ckunte/templates"
+[vs]: https://github.com/ckunte/templates/tree/master/vim-snippets "templates/vim-snippets at ckunte/templates"
 [Sublime Text]: https://www.sublimetext.com/ "Sublime Text - A sophisticated text editor for code, markup and prose"
