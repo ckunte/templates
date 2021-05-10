@@ -3,21 +3,21 @@
 This repository contains the following custom snippets:
 
 | Snippet                   | Description                     |
-| ------------------------- | -----------------------------   |
+| ------------------------- | ------------------------------- |
+| `//` + <kbd>tab</kbd>     | Inserts a formatted fraction    |
+| `_` + <kbd>tab</kbd>      | Formats and inserts a subscript |
 | `beg` + <kbd>tab</kbd>    | Inserts a begin/end block       |
-| `sec` + <kbd>tab</kbd>    | Inserts a section block         |
-| `sub` + <kbd>tab</kbd>    | Inserts a subsection block      |
+| `cb` + <kbd>tab</kbd>     | Inserts a formatted cube        |
+| `enum` + <kbd>tab</kbd>   | Inserts an enum list block      |
 | `fig` + <kbd>tab</kbd>    | Inserts a figure/label block    |
+| `item` + <kbd>tab</kbd>   | Inserts an item list block      |
 | `note` + <kbd>tab</kbd>   | Inserts a note template         |
 | `pdf` + <kbd>tab</kbd>    | Inserts an `includepdf` line    |
 | `ref` + <kbd>tab</kbd>    | Inserts a reference block       |
-| `tabl` + <kbd>tab</kbd>   | Inserts a table block           |
-| `_` + <kbd>tab</kbd>      | Formats and inserts a subscript |
+| `sec` + <kbd>tab</kbd>    | Inserts a section block         |
 | `sr` + <kbd>tab</kbd>     | Inserts a formatted square      |
-| `cb` + <kbd>tab</kbd>     | Inserts a formatted cube        |
-| `//` + <kbd>tab</kbd>     | Inserts a formatted fraction    |
-
-
+| `sub` + <kbd>tab</kbd>    | Inserts a subsection block      |
+| `tabl` + <kbd>tab</kbd>   | Inserts a table block           |
 
 ## How snippets work
 
