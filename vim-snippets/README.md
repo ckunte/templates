@@ -23,6 +23,8 @@ This repository contains the following custom snippets:
 
 Type a pre-defined keyword, say, `fig` and press <kbd>tab</kbd>, and it produces a full block of figure LaTeX code.
 
+Place `*.snippets` files under, say, `~/.vim/UltiSnips/` (and reload `~/.vimrc` with `source ~/.vimrc` if appropriate). 
+
 ## Requirements
 
 To be able to use these, the following is assumed: 
