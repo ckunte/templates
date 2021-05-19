@@ -1,4 +1,4 @@
-# vim user-defined snippets
+# User-defined LaTeX snippets for Vim
 
 This repository contains the following custom snippets:
 
@@ -21,7 +21,9 @@ This repository contains the following custom snippets:
 
 ## How snippets work
 
-Type a pre-defined keyword, say, `fig` and press <kbd>tab</kbd>, and it produces a full block of figure LaTeX code.
+Type a pre-defined keyword, say, `fig` and press <kbd>tab</kbd>, and it produces a full block of figure LaTeX code. See a demo below.
+
+https://user-images.githubusercontent.com/177423/118755310-398e4980-b89b-11eb-9167-746a98af80d3.mov
 
 Place `*.snippets` files under, say, `~/.vim/UltiSnips/` (and reload `~/.vimrc` with `source ~/.vimrc` if appropriate). 
 
