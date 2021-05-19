@@ -13,6 +13,16 @@ snippet note "note template" bA
 \end{document}
 endsnippet
 
+snippet toc "Table of contents, tables and figures" bA
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\pagebreak
+endsnippet
+
 snippet beg "begin{} / end{}" bA
 \begin{$1}
   $0
@@ -57,7 +67,7 @@ endsnippet
 snippet tabl "add table" bA
 \begin{table}[H]
 \caption{${1:Description}}
-\label{tab:${2:tname}}
+\label{tab:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\l$1$2$3)/g}}}
 \centering
   \begin{tabular}{+l^c}
   \rowstyle{\itshape}
@@ -109,4 +119,3 @@ endsnippet
 snippet // "Fraction" iA
 \\frac{$1}{$2}$0
 endsnippet
-
