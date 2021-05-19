@@ -18,6 +18,7 @@ This repository contains the following custom snippets:
 | `sr` + <kbd>tab</kbd>     | Inserts a formatted square      |
 | `sub` + <kbd>tab</kbd>    | Inserts a subsection block      |
 | `tabl` + <kbd>tab</kbd>   | Inserts a table block           |
+| `toc` + <kbd>tab</kbd>    | Inserts a TOC block             |
 
 ## How snippets work
 
