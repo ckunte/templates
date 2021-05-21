@@ -2,23 +2,34 @@
 
 This repository contains the following custom snippets:
 
-| Snippet                   | Description                     |
-| ------------------------- | ------------------------------- |
-| `//` + <kbd>tab</kbd>     | Inserts a formatted fraction    |
-| `_` + <kbd>tab</kbd>      | Formats and inserts a subscript |
-| `beg` + <kbd>tab</kbd>    | Inserts a begin/end block       |
-| `cb` + <kbd>tab</kbd>     | Inserts a formatted cube        |
-| `enum` + <kbd>tab</kbd>   | Inserts an enum list block      |
-| `fig` + <kbd>tab</kbd>    | Inserts a figure/label block    |
-| `item` + <kbd>tab</kbd>   | Inserts an item list block      |
-| `note` + <kbd>tab</kbd>   | Inserts a note template         |
-| `pdf` + <kbd>tab</kbd>    | Inserts an `includepdf` line    |
-| `ref` + <kbd>tab</kbd>    | Inserts a reference block       |
-| `sec` + <kbd>tab</kbd>    | Inserts a section block         |
-| `sr` + <kbd>tab</kbd>     | Inserts a formatted square      |
-| `sub` + <kbd>tab</kbd>    | Inserts a subsection block      |
-| `tabl` + <kbd>tab</kbd>   | Inserts a table block           |
-| `toc` + <kbd>tab</kbd>    | Inserts a TOC block             |
+| Template snippets          | Description                     |
+| -------------------------- | ------------------------------- |
+| `note` + <kbd>tab</kbd>    | Inserts a note template         |
+| `toc` + <kbd>tab</kbd>     | Inserts a TOC block             |
+
+| Section and block snippets | Description                     |
+| -------------------------- | ------------------------------- |
+| `beg` + <kbd>tab</kbd>     | Inserts a begin/end block       |
+| `sec` + <kbd>tab</kbd>     | Inserts a section block         |
+| `sub` + <kbd>tab</kbd>     | Inserts a subsection block      |
+| `enum` + <kbd>tab</kbd>    | Inserts an enum list block      |
+| `item` + <kbd>tab</kbd>    | Inserts an item list block      |
+| `fig` + <kbd>tab</kbd>     | Inserts a figure/label block    |
+| `tabl` + <kbd>tab</kbd>    | Inserts a table block           |
+| `ref` + <kbd>tab</kbd>     | Inserts a reference block       |
+| `apdx` + <kbd>tab</kbd>    | Inserts an appendix block       |
+
+| Math snippets              | Description                     |
+| -------------------------- | ------------------------------- |
+| `//` + <kbd>tab</kbd>      | Inserts a formatted fraction    |
+| `sr` + <kbd>tab</kbd>      | Inserts a formatted square      |
+| `cb` + <kbd>tab</kbd>      | Inserts a formatted cube        |
+| `compl` + <kbd>tab</kbd>   | Inserts a complement            |
+| `_` + <kbd>tab</kbd>       | Formats and inserts a subscript |
+
+| Include snippet            | Description                     |
+| -------------------------- | ------------------------------- |
+| `pdf` + <kbd>tab</kbd>     | Inserts an `includepdf` line    |
 
 ## How snippets work
 
@@ -37,12 +48,16 @@ To be able to use these, the following is assumed:
 
 ```vim
 call plug#begin('~/.vim/plugged')
+
 " UltiSnips for snippets
 Plug 'sirver/ultisnips'
+
+call plug#end()
+
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<c-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-k>'
-call plug#end()
+
 ```
 
 [us]: https://github.com/SirVer/ultisnips

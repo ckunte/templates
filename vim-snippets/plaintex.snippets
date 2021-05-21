@@ -10,6 +10,8 @@ snippet note "note template" bA
 
   \maketitle
 
+  $0
+
 \end{document}
 endsnippet
 
@@ -90,6 +92,19 @@ snippet ref "reference block" bA
   \emph{${3:Title}}, 
   ${4:Date}.
 \end{thebibliography}
+endsnippet
+
+snippet apdx "Appendix block" bA
+\pagebreak
+        
+\appendix
+\phantomsection\addcontentsline{toc}{section}{Appendices}
+\section*{Appendices} % (fold)
+\label{sec:appendices}
+  
+  $0
+
+% section appendices (end)
 endsnippet
 
 snippet '([A-Za-z])(\d)' "auto subscript" wrA
