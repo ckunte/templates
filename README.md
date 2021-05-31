@@ -5,10 +5,12 @@ This repository contains the following reference templates.
 1. `note.tex` for writing articles, notes, and papers &mdash; requires `ckunte.sty`.
 2. `letter.tex` for writing old-fashioned letters, cover pages, etc.
 
-To insert a template in Sublime Text on the fly:
+To insert a template in [Sublime Text] on the fly:
 
 1. Set file-type to LaTeX, and then
 2. Type a tab trigger (`note` or `letter`) and press <kbd>tab</kbd>
+
+See [editing aids](https://github.com/ckunte/templates#editing-aids) below.
 
 # Fillable forms
 
@@ -66,35 +68,11 @@ sudo tlmgr install datetime ebgaramond ebgaramond-maths enumitem erewhon fmtcoun
 
 # Editing aids
 
-User defined [Sublime Text 3 LaTeX snippets][sn] and [Vim LaTeX snippets][vs] are available for use.
-
-To download to, say, `~/` folder:
-
-```bash
-git clone https://github.com/ckunte/templates.git
-```
-
-## Sublime Text 3 LaTeX snippets
-
-Create a link to `templates/st3-snippets` folder for [Sublime Text] to access them:
-
-```bash
-ln -s $HOME/templates/st3-snippets "$HOME/Library/Application Support/Sublime Text 3/Packages/User/st3-snippets"
-```
-
-## Vim LaTeX snippets
-
-Park `*.snippets` files under `$HOME/.vim/UltiSnips/`.
-
-## How snippets work
-
-Type a pre-defined keyword, say, `fig` and press <kbd>tab</kbd>, and it produces a full block of figure LaTeX code. See a demonstration below.
-
-![Snippets demo in Sublime Text](./st3-snippets.gif)
+User defined [Sublime Text LaTeX snippets][sn] and [Vim LaTeX snippets][vs] are available for use.
 
 [tlu]: http://amaxwell.github.io/tlutility/ "TeX Live Utility"
 [w]: https://github.com/ckunte/templates/wiki "Home - ckunte/templates Wiki"
 [i]: https://github.com/ckunte/templates#installing-custom-style "Installing custom style system-wide"
-[sn]: https://github.com/ckunte/templates/tree/master/st3-snippets "templates/st3-snippets at ckunte/templates"
-[vs]: https://github.com/ckunte/templates/tree/master/vim-snippets "templates/vim-snippets at ckunte/templates"
+[sn]: https://github.com/ckunte/latex-snippets-st "Custom LaTeX snippets for use in Sublime Text"
+[vs]: https://github.com/ckunte/latex-snippets-vim "Custom LaTeX snippets for use in Vim"
 [Sublime Text]: https://www.sublimetext.com/ "Sublime Text - A sophisticated text editor for code, markup and prose"
