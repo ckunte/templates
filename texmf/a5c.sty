@@ -1,0 +1,44 @@
+% a5c.sty -- Custom style, 2019 ckunte
+\usepackage[margin=18mm]{geometry}
+\usepackage[proportional,osf,scaled=1.064]{erewhon}
+\usepackage[erewhon,vvarbb,bigdelims]{newtxmath}
+%\usepackage[T1]{fontenc}
+%\usepackage{stix2}
+\usepackage[font=it]{caption} % Italicising captions
+\usepackage{array,float} % Required for tables and figures
+\usepackage{enumitem} % For modifying description list
+\usepackage{longtable} % Table that can extend over pagebreaks
+\usepackage{titling} % To enable using elements like title and author in other parts of 
+%\usepackage[ddmmyyyy]{datetime}\renewcommand{\dateseparator}{.} % Custom date
+\usepackage{pdfpages} % For including pdf pages
+\usepackage{pdflscape} % For certain landscape pages
+\usepackage{/Users/ckunte/texmf/pythonhighlight}
+\usepackage{pgfplots}
+% --- Styling section titles to small capitalised ---
+% \usepackage{sectsty} % Section styling
+% \sectionfont{\rmfamily\mdseries\normalsize\Large\scshape\MakeLowercase}
+% \subsectionfont{\rmfamily\mdseries\normalsize}
+% \subsubsectionfont{\rmfamily\mdseries\itshape\normalsize}
+% --- Para spacing and table row height settings ---
+\setlength\parskip{3pt} % Paragraph spacing
+\setlength{\extrarowheight}{3pt} % Setting default row height
+\setlist[description]{leftmargin=\parindent}
+% --- Degree symbol ---
+\def\deg{\ifmmode^\circ\else$^\circ$\fi} % Degree symbol
+\newcommand{\hl}[1]{\textcolor{red}{#1}} % Highlight text in red
+\usepackage[xetex,bookmarks,colorlinks,pdfusetitle]{hyperref} % Document properties, etc.
+\hypersetup{linkcolor=blue,citecolor=magenta,filecolor=black,urlcolor=blue} % hyperlink setup
+% --- Replace 'Section' to section symbol in autoref calls ---
+\def\sectionautorefname{\S}
+\def\subsectionautorefname{\S}
+\def\subsubsectionautorefname{\S}
+% --- Relabelling List of Tables and Figures ---
+\renewcommand*\listtablename{List of tables} % Sentence case titles
+\renewcommand*\listfigurename{List of figures} % Sentence case titles
+% --- Styling header rows in tables to italics ---
+\newcolumntype{+}{>{\global\let\currentrowstyle\relax}}
+\newcolumntype{^}{>{\currentrowstyle}}
+\newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1}%
+  #1\ignorespaces
+}
+\pgfplotsset{compat=1.18}
