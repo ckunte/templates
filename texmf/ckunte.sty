@@ -8,7 +8,7 @@
 \usepackage{longtable} % Table that can extend over pagebreaks
 \usepackage{pgfplots} % For plots
 \pgfplotsset{compat=1.16}
-% \usepackage{pdflscape} % For certain landscape pages
+\usepackage{pdflscape} % For certain landscape pages
 \usepackage{array,float} % Required for tables and figures
 \usepackage{pdfpages} % For including pdf pages
 \usepackage{titling} % To enable using elements like title and author in other parts of document
@@ -30,6 +30,8 @@
 % \definecolor{blue}{rgb}{0,0,0.60}
 % \definecolor{red}{rgb}{0.60,0,0}
 %\definecolor{royalblue(traditional)}{rgb}{0.0, 0.14, 0.4}
+\setlist[description]{leftmargin=\parindent}
+\AtBeginEnvironment{quote}{\itshape}
 \usepackage[xetex,bookmarks,colorlinks,pdfusetitle]{hyperref} % Document properties, etc.
 \hypersetup{linkcolor=blue,citecolor=magenta,filecolor=black,urlcolor=blue} % hyperlink setup
 \def\sectionautorefname{\S}
