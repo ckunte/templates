@@ -3,7 +3,7 @@
 This repository contains the following reference templates. 
 
 1. `note.tex` for writing articles, notes, and papers &mdash; requires `ckunte.sty`.
-2. `letter.tex` for writing old-fashioned letters, cover pages, etc.
+2. `letter.tex`, `letter-template.typ` and `letter.typ` for writing old-fashioned letters, cover pages, etc.
 
 To insert a template in [Sublime Text] on the fly:
 
